@@ -1,0 +1,29 @@
+
+
+  <div ng-controller='dropdownCtrl'>
+    <span>Please select a section:</span>
+    <select ng-model="selectedSection" ng-options="section.SECTIONSEQ as section.NAME for section in listOfSections" style="width:350px;"> <option value='1'>First Avaliable</option></select>
+
+    <span>Please select a Table:</span>
+    <select  ng-model="selectedTable" ng-options="table.TABLESSEQ as table.ID + '  ' + table.SECTIONNAME for table in listOfTables | filter:{ SECTIONSEQ : selectedSection } " style="width:350px;"> <option value=''>Select Table</option></select>
+
+
+
+    <div>
+      <img draggable ng-repeat="table in listOfTables | filter:{ SECTIONSEQ : selectedSection }  "
+           src="image\{{table.IMAGE}}" id="{{table.ID}}" class='table' ng-style="{ 'display': 'initial', 'position': 'relative', 'left':table.POSLEFT+'px', 'top':table.POSTOP+'px', 'backgroundColor': 'yellow' }">
+    </div>
+
+
+
+
+
+
+
+
+
+     <button ng-click="dragOn()" >Run Free</button>
+     <button ng-click="dragOff()" >Lock Down</button>
+     <button ng-click="saveTables()" >Save ME</button>
+
+ </div>

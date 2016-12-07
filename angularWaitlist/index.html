@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-app='waitlistApp' ng-controller='mainController'>
+
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+
+    <div id="main-content">
+
+        <side-buttons></side-buttons>
+
+        <table-section></table-section>
+
+        <waitlist></waitlist>
+
+    </div>
+
+    <div id="bottom-content">
+
+        <div class="arrow-box"><span class="up-arrow"></span></div>
+
+        <table-buttons></table-buttons>
+
+    </div>
+
+</body>
+<!-- dependencies -->
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+<script src="app/app.js"></script>
+
+<!-- controllers -->
+<script src="app/controllers/mainController.js"></script>
+<script src="app/controllers/dropdownCtrl.js"></script>
+
+<!-- directives -->
+<script src='app/directives/tableSection.js'></script>
+<script src='app/directives/nav.js'></script>
+<script src='app/directives/waitlist.js'></script>
+<script src='app/directives/sideButtons.js'></script>
+<script src='app/directives/tableButtons.js'></script>
+<script src='app/directives/drag.js'></script>
+
+</html>

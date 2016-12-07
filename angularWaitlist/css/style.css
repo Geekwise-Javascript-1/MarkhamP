@@ -1,0 +1,86 @@
+
+#main-content{
+display: flex;
+justify-content: space-between;
+}
+#bottom-content{
+    position: fixed;
+    bottom: 0px;
+    height: 3vh;
+    width: 100%;
+}
+/*test classes*/
+.table-test {
+    height: 70vh;
+    width: 65vw;
+    background: black;
+    margin: 0;
+}
+.test-waitlist {
+    height: 70vh;
+    width: 20vw;
+    background: red;
+    margin: 0;
+}
+.test-buttons{
+    height: 70vh;
+    width: 5vw;
+    border: 1px solid black;
+}
+.test-tableButtons{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BARS */
+nav {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: rgb(210, 210, 210);
+    box-shadow: 0px 5px 5px rgba(0,0,0, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 3px 20px;
+    border-left: 1px solid black;
+}
+nav ul li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*FOOTER*/
+.arrow-box{
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 3vh;
+    width: 10vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up-arrow{
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+
+  border-bottom: 2vh solid black;
+}
+.arrow-box:hover{
+    background: green;
+}
+#bottom-content:hover {
+    height: 13vh;
+}
